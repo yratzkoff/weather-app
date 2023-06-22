@@ -1,0 +1,19 @@
+.header__bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.bar__menu {
+    margin-top: 29px;
+    margin-right: 21px;
+}
+
+.bar__left-item {
+    margin-top: 22px;
+    margin-left: 33px;
+}
