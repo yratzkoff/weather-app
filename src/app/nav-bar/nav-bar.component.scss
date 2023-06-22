@@ -1,0 +1,44 @@
+.nav-bar {
+  position: absolute;
+  width: 366px;
+  height: 72px;
+  left: 11px;
+  top: 737px;
+  background: rgba(217, 217, 217, 0.77);
+  border-radius: 20px;
+}
+
+.nav-bar__icons-container {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons-container__icon {
+  width: fit-content;
+  height: fit-content;
+  &:first-child {
+    padding-left: 37px;
+  }
+  &:last-child {
+    padding-right: 37px;
+  }
+}
+
+.nav-bar__selection-box {
+    --selection-box-left: 0px;
+  height: inherit;
+  width: calc(366px / 4);
+  position: absolute;
+  background: #d9d9d9;
+  border-radius: 20px;
+  left: var(--selection-box-left);
+  transition: 0.3s;
+}
+
+.icons-container__icon:focus {
+
+}
