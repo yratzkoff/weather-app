@@ -1,0 +1,6 @@
+<div class="nav-bar">
+  <div class="nav-bar__selection-box" [style.--selection-box-left]="selctionBoxLeft"></div>
+  <div class="nav-bar__icons-container" >  
+    <img *ngFor="let link of iconsSrcLinks; index as i" [src]="link" class="icons-container__icon" (click)="iconClicked(i)"/>
+  </div>
+</div>
