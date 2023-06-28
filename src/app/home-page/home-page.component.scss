@@ -1,0 +1,35 @@
+.home-page {
+  width: 100%;
+  height: fit-content;
+  max-height: calc(100% - 98px - 132px);
+  position: absolute;
+  display: grid;
+  grid-template-rows: [title] [location] [temperature] [details];
+  top: 98px;
+  padding: 0 11px;
+}
+
+.home-page__title {
+  grid-area: title;
+  background: -webkit-linear-gradient(
+    rgb(223, 237, 252),
+    rgba(223, 237, 252, 0%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline solid rgb(125, 146, 225);
+  font-size: 36px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+.home-page__location-title {
+  grid-area: location;
+  color: #0e1530;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 700;
+  margin-left: calc(29px - 11px);
+}
