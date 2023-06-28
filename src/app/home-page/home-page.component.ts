@@ -1,5 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+export type locationData = {
+  name: string,
+  temperature: number,
+  details: string
+}
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -7,7 +13,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  @Input() locationName: string = "ןדרשקך";
+  @Input() location!: locationData;
 
   constructor() { }
 
